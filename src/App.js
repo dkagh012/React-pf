@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
-import Home from './component/Home';
-import Wrapper from './component/Wrapper';
-import Skils from './component/Skils';
-import Todo from './component/Todo';
+import Main from './components/Main';
+import Project from './components/Project';
+import About from './components/About';
+import Contact from './components/Contact';
+import Home from './components/Home';
+
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -13,21 +15,25 @@ function App() {
   <BrowserRouter>
  
   <Route exact path="/">
+          <Main/>
+        </Route>
+
+        <Route exact path="/home">
           <Home/>
         </Route>
-
-        <Route exact path="/Wrapper">
-          <Wrapper/>
+        
+        <Route exact path="/project">
+          <Project/>
         </Route>
 
-        <Route exact path="/Skils">
-          <Skils/>
+        <Route exact path="/about">
+          <About/>
+        </Route>
+
+        <Route exact path="/Contact">
+          <Contact/>
         </Route>
         
-        <Route exact path="/todo">
-          <Todo/>
-        </Route>
-      
 
         
   </BrowserRouter>
