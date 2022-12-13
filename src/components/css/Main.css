@@ -1,0 +1,27 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.main_container {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.main_center {
+    width: 810px;
+    font-size: 100px;
+    text-align: center;
+
+}
+
+.main_name {
+    text-align: center;
+    padding-top:50px;
+}
+
+
